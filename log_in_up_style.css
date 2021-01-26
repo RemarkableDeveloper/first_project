@@ -39,6 +39,7 @@ body {
   background-color: white;
   position: relative;
   padding-bottom: 91.78px;
+  min-width: 100vh;
 }
 
 h1 {
@@ -59,7 +60,7 @@ img {
 /* ===== NAVBAR ===== */
 .navbar {
   width: 100%;
-  height: auto;
+  height: 20%;
   border-bottom: 1px solid rgb(168, 166, 156);
   display: flex;
   justify-content: center;
@@ -83,15 +84,6 @@ img {
 
 .login__content {
   display: grid;
-}
-
-.login__img {
-  justify-self: center;
-}
-
-.login__img img {
-  width: 310px;
-  margin-top: 1.5rem;
 }
 
 .login__forms {
@@ -231,8 +223,8 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .login {
-    height: 100vh;
+ .login {
+    height: 75.3vh;
     overflow: hidden;
   }
 
@@ -240,21 +232,7 @@ img {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     align-items: center;
-    margin-left: 10rem;
-  }
-
-  .login__img {
-    display: flex;
-    width: 600px;
-    height: 588px;
-    background-color: var(--first-color-lighten);
-    border-radius: 1rem;
-    padding-left: 1rem;
-  }
-
-  .login__img img {
-    width: 390px;
-    margin-top: 0;
+    margin-left: 27%;
   }
 
   .login__registre,
@@ -278,6 +256,7 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
+  
 }
 .footer a{
   float:left;
